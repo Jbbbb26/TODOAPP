@@ -9,7 +9,16 @@ namespace TODOCommon
     public class Task
     {
         private string _status;
+        public Task()
+        {
+            TaskId = 0;
+            Description = string.Empty;
+            CreationDate = DateTime.Now;
+            ModifiedDate = DateTime.Now;
+            Status = "Not Started";
+        }
         public int TaskId { get; set; }
+        
         public string Description { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime ModifiedDate { get; set; }

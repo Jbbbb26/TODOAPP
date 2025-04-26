@@ -84,6 +84,9 @@ namespace TODODataService
                 if (tasks[i].TaskId == id)
                 {
                     tasks.Remove(tasks[i]);
+                    
+                
+                
                 }
             }
         }
